@@ -1,4 +1,2 @@
-dist: trusty
-sudo: required
-before_install:
-- ruby -v
+language: csharp
+script: env
