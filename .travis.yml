@@ -1,2 +1,13 @@
-language: csharp
-script: env
+language: ruby
+bundler_args: --without development
+script: "bundle exec rake spec RACK_ENV=test"
+rvm:
+  - 2.3.2
+notifications:
+  email: false
+  webhooks:
+    urls:
+      - http://requestb.in/174qgmm1
+    on_success: always
+    on_failure: always
+    on_start: true
