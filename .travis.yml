@@ -1,13 +1,11 @@
-language: ruby
-bundler_args: --without development
-script: "bundle exec rake spec RACK_ENV=test"
-rvm:
-  - 2.3.2
-notifications:
-  email: false
-  webhooks:
-    urls:
-      - http://requestb.in/vjfkzivj
-    on_success: always
-    on_failure: always
-    on_start: true
+language: go
+go:
+    - tip
+install:
+    - npm -g install yarn
+    - yarn
+before_install:
+    - go get github.com/ikeikeikeike/go-sitemap-generator/stm
+    - go get github.com/russross/blackfriday
+    - go get github.com/tcnksm/go-httpstat
+    - nvm install node
