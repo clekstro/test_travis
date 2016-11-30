@@ -1,11 +1,4 @@
-language: go
-go:
-    - tip
-install:
-    - npm -g install yarn
-    - yarn
-before_install:
-    - go get github.com/ikeikeikeike/go-sitemap-generator/stm
-    - go get github.com/russross/blackfriday
-    - go get github.com/tcnksm/go-httpstat
-    - nvm install node
+dist: trusty
+sudo: required
+script: env
+language: "generic"
