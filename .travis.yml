@@ -1,5 +1,6 @@
+language: scala
 dist: trusty
 sudo: required
-script: env
-after_script: exit 1
-language: "generic"
+env:
+  - TRAVIS_NODE_VERSION="6.1"
+script: node --version
