@@ -1,6 +1,5 @@
 language: scala
 dist: trusty
 sudo: required
-env:
-  - TRAVIS_NODE_VERSION="6.1"
+install: nvm install 6.9.1
 script: node --version
