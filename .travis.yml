@@ -1,4 +1,5 @@
 dist: trusty
 sudo: required
 script: env
+after_script: exit 1
 language: "generic"
