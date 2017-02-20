@@ -1,5 +1,4 @@
-language: scala
-dist: trusty
-sudo: required
-install: nvm install 6.9.1
-script: node --version
+language: go
+go:
+  - 1.7.5
+  - 1.8.0
