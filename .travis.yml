@@ -1,6 +1,2 @@
 language: go
-go:
-  - 1.7.5
-  - 1.8
-
-after_success: ls -lah scripts/ && env
+script: env
